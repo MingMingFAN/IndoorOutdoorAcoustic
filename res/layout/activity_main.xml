@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mingming.research.roomsampling.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/textView_rt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView1"
+        android:text="IndoorOutdoor:" />
+
+    <Spinner
+        android:id="@+id/spinner_rt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_note"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="25dp"
+        android:text="Volume (of Max):" />
+
+    <Spinner
+        android:id="@+id/spinner_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/editText_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_rt"
+        android:layout_toRightOf="@+id/textView"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinner_rt"
+        android:text="note (optional):" />
+
+    <Button
+        android:id="@+id/button_probing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkBox_auto"
+        android:layout_marginTop="18dp"
+        android:text="Probing" />
+
+    <TextView
+        android:id="@+id/textView_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner_volume"
+        android:layout_below="@+id/button_probing"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinner_volume"
+        android:text="Probe sound source:" />
+
+    <Spinner
+        android:id="@+id/spinner_soundsource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <CheckBox
+        android:id="@+id/checkBox_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_soundsource"
+        android:layout_toLeftOf="@+id/spinner_soundsource"
+        android:text="Auto Probing" />
+
+</RelativeLayout>
+
